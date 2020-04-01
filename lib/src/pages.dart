@@ -15,7 +15,7 @@ class Page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         width: double.infinity,
-        color: model.color,
+        color: model.backgroundColor,
         child: Opacity(
           opacity: percentVisible,
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
