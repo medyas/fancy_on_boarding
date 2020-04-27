@@ -65,13 +65,13 @@ class _FancyOnBoardingState extends State<FancyOnBoarding>
 
     return Stack(
       children: [
-        Page(
+        FancyPage(
           model: pageList[activeIndex],
           percentVisible: 1.0,
         ),
         PageReveal(
           revealPercent: slidePercent,
-          child: Page(
+          child: FancyPage(
             model: pageList[nextPageIndex],
             percentVisible: slidePercent,
           ),
